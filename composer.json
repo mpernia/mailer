@@ -3,24 +3,26 @@
     "description": "Send email via SMTP using PHPMailer.",
     "type": "php",
     "license": "MIT",
-    "keywords": ["exceptions","email","smtp"],
-    "authors": [
-        {
-            "name": "Maikel Enrique Pernia Matos",
-            "email": "meperniamatos@gmail.com"
-        }
-    ],
+    "keywords": ["exceptions", "email", "smtp"],
+    "authors": [{
+        "name": "Maikel Enrique Pernia Matos",
+        "email": "meperniamatos@gmail.com"
+    }],
 
-	"homepage": "https://github.com/mpernia/SesPhp",
-	"autoload": {
-           "psr-4": {
-              "Mailer\\": "src"
-           }
+    "homepage": "https://github.com/mpernia/mailer",
+    "autoload": {
+        "psr-4": {
+            "Mailer\\": "src"
         },
-        "require": {
-            "php": ">= 7.2.19",
-            "phpmailer/phpmailer": "~6.1"
-        },
-        "extra": {
-        }
+        "classmap": [
+            "src/"
+        ]
+    },
+    "require": {
+        "php": ">= 7.2.19",
+        "phpmailer/phpmailer": "~6.1",
+        "vlucas/phpdotenv": "^3.6",
+        "mustache/mustache": "^2.13"
+    },
+    "extra": {}
 }
