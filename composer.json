@@ -21,7 +21,7 @@
     "require": {
         "php": ">= 7.2.19",
         "phpmailer/phpmailer": "~6.1",
-        "vlucas/phpdotenv": "^3.6",
+        "vlucas/phpdotenv": "^5.2",
         "mustache/mustache": "^2.13"
     },
     "extra": {}
